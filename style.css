@@ -1,0 +1,159 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #frame {
+            width: 85%;
+            height: 50%;
+            margin: 0 auto;
+        }
+        
+        .startPage {
+            width: 100%;
+            z-index: 999;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* border: 1px solid #000; */
+            /* display: none; */
+        }
+        
+        #startBtn {
+            position: absolute;
+            background-image: url('img/startGame1.png');
+            height: 170px;
+            width: 200px;
+            background-size: 100% 100%;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            /* z-index: 999; */
+        }
+        
+        .wrapper {
+            /*父级设置为relative，方便下面子元素定位*/
+            position: relative;
+            width: 100%;
+            height: 960px;
+            background: url('img/bg.jpg');
+            background-size: 100% 100%;
+        }
+        
+        .left-side {
+            width: 24%;
+            position: absolute;
+            height: 960px;
+            /* border-right: 1px solid #000; */
+            /* background: rgba(236, 218, 218, 0.5); */
+        }
+        
+        .left-side img {
+            display: none;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        
+        .main {
+            position: absolute;
+            left: 25%;
+            width: 50%;
+            height: 90%;
+            /* background: rgba(236, 218, 218, 0.5); */
+        }
+        
+        .header {
+            width: 100%;
+            height: 80px;
+            text-align: center;
+            /* border: 1px solid #f40; */
+        }
+        
+        .header .score {
+            line-height: 80px;
+            color: #ddd;
+            font-size: 24px;
+            font-weight: bolder;
+        }
+        
+        .content {
+            position: absolute;
+            width: 75%;
+            height: 34%;
+            left: 12.5%;
+            top: 34.5%;
+            /* background: rgba(96, 132, 231, 0.5); */
+        }
+        
+        .loser {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            /* background: rgba(219, 27, 27, 0.5); */
+        }
+        
+        .con {
+            position: absolute;
+            background-image: url('img/loserP.jpg');
+            background-size: 100% 100%;
+            height: 300px;
+            width: 400px;
+            margin: auto;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            border-radius: 20px;
+        }
+        
+        .loserScore {
+            position: absolute;
+            top: 41%;
+            left: 37%;
+            color: #222;
+            font-size: 30px;
+            font-weight: bold;
+            display: block;
+            height: 30px;
+            width: 40px;
+        }
+        
+        .close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background-image: url('img/closeBtn.png');
+            background-size: 100% 100%;
+            cursor: pointer;
+            z-index: 998;
+        }
+        /*/
+
+        
+        /* 执行js之后才会产生以下样式 */
+        /* 生成苹果 */
+        
+        .food {
+            background-image: url('img/apple.png');
+            background-size: 100% 100%;
+        }
+        /* 生成蛇头蛇身 */
+        
+        .head {
+            background-image: url('img/head1.png');
+            background-size: 100% 100%;
+        }
+        
+        .body {
+            background-image: url('img/body1.png');
+            background-size: 100% 100%;
+        }
